@@ -40,7 +40,7 @@ Arquitectura Hexagonal
 1) recruiting-api.newshore.es:
    Api proporcionada por el enunciado del ejercicio para gestionar los viajes
 3) apilayer.net:
-   Api utilizada para la conversión del dolor a otras monedas.
+   Api utilizada para la conversión del dolar a otras monedas.
 
 ## Tests
 
