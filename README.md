@@ -42,17 +42,37 @@ Arquitectura Hexagonal
 3) apilayer.net:
    Api utilizada para la conversión del dolor a otras monedas.
 
+## Tests
+
+Se realizaron algunas pruebas a nivel del servicio para validar el correcto funcionamiento de los viajes.
+
+## Control de Exceptions
+
+Se controlo la exeption badRequest por medio de un handling, para mostrar un mensaje personalizado a los usuarios dependiendo del caso
+
+## Logs
+
+Se imprimen diferentes logs para monitorear el flujo del programa
+
 ## Endpoints
+1)
+* url : https://localhost:7121/Flight/flights
+* http: Get
+* description: este endpoint es encargado de traer todos los vuelos proporcionados por la API del ejercicios
+  
+2)
+* url: https://localhost:7121/Flight/journeys/{origin}/{destination}
+* htttp: Post
+* description: este endpoint obtiene los v vuelos obtenidos del origen y el destino proporcionados por el usuario
+* parameters: {origin} : string  {destination} : string
+* Request body : [{"departureStation":"MZL","arrivalStation":"MDE","flightCarrier":"CO","flightNumber":"8001","price":200}]
+  
+3)
+* url : https://localhost:7121/Flight/convertion
+* http: Get
+* description: este endpoint es encargado de obtener la conversión respectivo al equivalente de un dolar
 
-url : https://localhost:7121/Flight/flights
-http: Get
-description: este endpoint es encargado de traer todos los vuelos proporcionados por la API del ejercicios
+## Authorization
 
-
-url: https://localhost:7121/Flight/journeys/{origin}/{destination}
-htttp: Post
-description: este endpoint obtiene los v vuelos obtenidos del origen y el destino proporcionados por el usuario
-parameters: {origin} : string  {destination} : string
-Request body : [{"departureStation":"MZL","arrivalStation":"MDE","flightCarrier":"CO","flightNumber":"8001","price":200}]
-
+No se utilizó ningun tipo de autorización para esta aplicación
 
