@@ -111,7 +111,6 @@ namespace NewShoreFlights.Flihts.Application.Services
 
             return isSameOrigen;
         }
-
         private bool Contains(List<GeneralFlight> flights, GeneralFlight generalFlight)
         {
             foreach (var flight in flights)
@@ -133,6 +132,5 @@ namespace NewShoreFlights.Flihts.Application.Services
         {
             return _flightRepository.Convertion();
         }
-
     }
 }
