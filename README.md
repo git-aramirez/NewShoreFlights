@@ -6,7 +6,7 @@ esta cuenta con algunas restricciones;
 
 1) El origen y el destino no pueden ser iguales
 2) Las rutas deben tener maximo 3 caracteres
-3) Las retas deben estar en Mayuscula sostenida
+3) Las rutas deben estar en Mayuscula sostenida
 
 ## Arquitectura utilizada
 
